@@ -14,6 +14,8 @@ This is so that I can manage all my settings for windows terminal and profile se
 - Install startship prompt
 `winget install --id Starship.Starship`
 
+- Delete ~/.config/startship.toml file
+
 - Create a symlink to ~/.config/startship.toml from startship-promp/startship.toml
 
 ### Windows Powershell
