@@ -16,9 +16,18 @@ disabled = true
 
 # Use custom format
 format = """
-[┌───────────────────>](bold green)
-[│](bold green)$directory$rust$package
-[└─>](bold green) """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$nodejs\
+$cmd_duration $jobs $time\
+$line_break\
+$character"""
 
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
