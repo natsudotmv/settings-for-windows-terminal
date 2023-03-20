@@ -1,51 +1,17 @@
-# Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
-
-# Inserts a blank line between shell prompts
-add_newline = true
-
-# Replace the "❯" symbol in the prompt with "➜"
-[character] # The name of the module we are configuring is "character"
-success_symbol = "[➜](bold green)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
-
-# Disable the package module, hiding it from the prompt completely
-[package]
-disabled = true
-
 # ~/.config/starship.toml
 
-# Use custom format
-format = """
-$username\
-$hostname\
-$directory\
-$git_branch\
-$git_state\
-$git_status\
-$git_metrics\
-$fill\
-$nodejs\
-$cmd_duration $jobs $time\
-$line_break\
-$character"""
+[username]
+style_root = "magenta bold"
+style_user = "green bold"
+format = "[$user]($style)"
+show_always = true
 
-# Wait 10 milliseconds for starship to check files under the current directory.
-scan_timeout = 10
+[hostname]
+format = "[@$hostname](bold green) "
+ssh_only = false
 
-# Disable the blank line at the start of the prompt
-add_newline = false
-
-# Set "foo" as custom color palette
-palette = "foo"
-
-# Define custom colors
-[palettes.foo]
-# Overwrite existing color
-blue = "21"
-# Define new color
-mustard = "#af8700"
-
-[dotnet]
-symbol = "🥅 "
-style = "green"
-heuristic = false
+[memory_usage]
+style = "dimmed"
+disabled = false
+threshold = -1
+format = "[${ram}]($style) "
