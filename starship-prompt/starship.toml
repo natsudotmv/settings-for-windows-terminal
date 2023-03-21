@@ -1,5 +1,9 @@
 # ~/.config/starship.toml
 
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
 [username]
 style_root = "magenta bold"
 style_user = "green bold"
@@ -9,9 +13,3 @@ show_always = true
 [hostname]
 format = "[@$hostname](bold green) "
 ssh_only = false
-
-[memory_usage]
-style = "dimmed"
-disabled = false
-threshold = -1
-format = "[${ram}]($style) "
