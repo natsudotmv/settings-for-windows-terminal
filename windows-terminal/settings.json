@@ -6,6 +6,14 @@
         {
             "command": 
             {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": 
+            {
                 "action": "newTab",
                 "index": 4
             },
@@ -14,22 +22,14 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+c"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": 
-            {
                 "action": "newTab",
                 "index": 1
             },
             "keys": "ctrl+2"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
         },
         {
             "command": 
@@ -41,6 +41,14 @@
         {
             "command": 
             {
+                "action": "newTab",
+                "index": 0
+            },
+            "keys": "ctrl+1"
+        },
+        {
+            "command": 
+            {
                 "action": "closeTab"
             },
             "keys": "ctrl+w"
@@ -48,10 +56,11 @@
         {
             "command": 
             {
-                "action": "newTab",
-                "index": 0
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
             },
-            "keys": "ctrl+1"
+            "keys": "alt+shift+d"
         },
         {
             "command": 
@@ -96,15 +105,6 @@
         {
             "command": "find",
             "keys": "ctrl+shift+f"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
         }
     ],
     "copyFormatting": "none",
@@ -148,19 +148,25 @@
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "Command Prompt"
+                "name": "Command Prompt",
+                "opacity": 80,
+                "useAcrylic": true
             },
             {
                 "guid": "{5cba7266-e40c-527e-9ca2-ec10d4f97331}",
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
+                "opacity": 80,
+                "source": "Windows.Terminal.VisualStudio",
+                "useAcrylic": true
             },
             {
                 "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
                 "hidden": false,
-                "name": "kali-linux",
-                "source": "Windows.Terminal.Wsl"
+                "name": "Kali Linux",
+                "opacity": 80,
+                "source": "Windows.Terminal.Wsl",
+                "useAcrylic": true
             }
         ]
     },
